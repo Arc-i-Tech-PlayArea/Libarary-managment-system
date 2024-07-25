@@ -1,10 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Statistics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <h1>Annual Book Statistics</h1>
+        <canvas id="bookStatsChart" height="40vh" width="80vw"></canvas>
+    </div>
+
+    <script>
+        // Dummy data (replace with your actual statistics)
+        const labels = ['Total Books', 'Checked Out', 'New Acquisitions'];
+        const data = [500, 100, 50];
+
+        // Create the bar chart
+        new Chart(document.getElementById('bookStatsChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Annual Book Statistics',
+                    data: data,
+                    backgroundColor: [
+                        'rgba(63, 99, 141, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(75, 192, 192, 0.7)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
