@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+   <link rel="stylesheet" href="../main/resources/Menu.css">
+</head>
+  <body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar">
+              <div class="display-6 col-lg-8 px-5"><p>Welcome</p></div>
+             
+                <ul class="navbar-nav">
+                  <li class="nav-item col-lg-3">
+                    <a class="nav-link text-uppercase"href="#">Home</a>
+                  </li>
+                  <li class="nav-item col-lg-3">
+                    <a class="nav-link text-uppercase" href="#">About</a>
+                  </li>
+                  <li class="nav-item col-lg-3">
+                    <a class="nav-link text-uppercase" href="#">Contacts</a>
+                  </li>
+
+                  <li class="nav-item dropdown col-lg-3">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Login/Registration
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                      <li>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">
+                            Login
+                          </button>
+                      </li>
+                      <li>
+                          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#regi">
+                            Registration
+                          </button>  
+                      </li>
+                      
+                    </ul>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+  <div class="container-fluid">
+  <div class="body display-2 text-center text-light">Welcome To <br> Our Library</div>
+  </div>
+
+
+
+    
+
+
+<!-- Code for login form -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            </div>
+            <div class="modal-body">
+
+                <form>
+
+                    <div class="mb-3">
+                      <label for="Email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="Email">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="Password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="Password">
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary text-center" >Submit</button>
+                  </form>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <!-- code for registration form -->
+
+      <div class="modal fade" id="regi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="Name" class="form-control" id="Email">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="Address" class="form-label">Address</label>
+                        <input type="address" class="form-control" id="Email">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="Mob" class="form-label">Mobile No</label>
+                        <input type="mob" class="form-control" id="Email">
+                      </div>
+
+                    <div class="mb-3">
+                      <label for="Email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="Email">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="Password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="Password">
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary text-center" >Submit</button>
+                  </form>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
